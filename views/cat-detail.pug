@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+      meta(charset="UTF-8")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      meta(http-equiv="X-UA-Compatible" content="ie=edge")
+      title= title
+      link(rel="stylesheet" type="text/css" href="/css/cat-detail.css")
+    body
+      script(src='/js/main.js')
+      a.details(href="/breeds") back
+      .content
+        .heading
+          .image 
+            img(src=cat.imageLink alt="login" style="width:300px; height:300px;object-fit: contain;")
+          .information
+            h1 #{cat.breed}
+            h3 Size 
+            p #{cat.size}
+            h3 Coat 
+            p #{cat.coat}
+            h3 Colour 
+            p #{cat.colour}
+            a.button(href="/cat-detail-edit/"+ cat._id) Edit Cat Details
+        
+        .details
+          p #{cat.description}          
+          button.delete-button(type="submit" onclick='deleteCat("'+ cat._id +'")') Delete Cat Details

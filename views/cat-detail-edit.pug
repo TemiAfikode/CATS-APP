@@ -1,0 +1,37 @@
+doctype html
+html
+    head
+      meta(charset="UTF-8")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      meta(http-equiv="X-UA-Compatible" content="ie=edge")
+      title= title
+      link(rel="stylesheet" type="text/css" href="/css/cat-detail-edit.css")
+    body
+      script(src='/js/main.js')
+      a.details(href="/breeds/"+cat._id) back
+      .content
+        h1.page-title Edit #{cat.breed}!!!
+        form.edit(method="post", onsubmit='updateCatDetails("'+ cat._id +'");return false')
+          input(type="hidden", name="id", value=cat._id)
+          div.form-field
+            label(for="name") Name: 
+            input.form-input(type="text", id="name", name="name", value=cat.name)
+          div.form-field 
+            label(for="breed") Breed: 
+            input.form-input(type="text", id="breed", name="breed", value=cat.breed)
+          div.form-field 
+            label(for="description") Description: 
+            input.form-input(type="text", id="description", name="description", value=cat.description)
+          div.form-field 
+            label(for="size") Size: 
+            input.form-input(type="text", id="size", name="size", value=cat.size)
+          div.form-field 
+            label(for="coat") Coat: 
+            input.form-input(type="text", id="coat", name="coat", value=cat.coat)
+          div.form-field 
+            label(for="colour") Colour: 
+            input.form-input(type="text", id="colour", name="colour", value=cat.colour)
+          div.form-field 
+            label(for="imageLink") Image Link: 
+            input.form-input(type="text", id="imageLink", name="href", value=cat.imageLink)
+          input.button(type="submit", value="Update Cat Details")

@@ -1,0 +1,72 @@
+html {
+    box-sizing: border-box;
+}
+
+:root {
+    --light-orange: #ff6600;
+    --dark-green: #003b00;
+    --dark-grey: #777;
+    --light-grey: #dadce0;
+    --white: #fff;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background-color: var(--light-grey);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px
+}
+
+.heading {
+    padding: 0 50px;
+}
+
+.breeds {
+    padding: 0 50px;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-gap: 35px;
+    grid-template-columns: repeat(auto-fill, 300px);
+}
+
+.cat-details {
+    width: 250px;
+    height: 350px;
+    margin: 10px 40px 10px 0;
+}
+
+.image {
+    border: 2px solid;
+    width: 250px;
+    height: 250px;
+    background: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #0d244b;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn a {
+    color: #ffffff;
+}
+
+
+/* Darker background on mouse-over */
+
+.btn:hover {
+    background-color: RoyalBlue;
+}

@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+      meta(charset="UTF-8")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      meta(http-equiv="X-UA-Compatible" content="ie=edge")
+      title= title
+      link(rel="stylesheet" type="text/css" href="/css/cat-breeds.css")
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    body
+      .header
+        a.details(href="/") back
+        button.btn
+          i.fa.fa-plus
+          a(href="/cat/new")|  Add
+      .content
+        .heading
+          h1.title Cat Breeds 
+          h3.description Trying to learn more about the different breeds of cats across the world? Browse through our list of cat breeds and find out unique features about the best cat for you.
+        
+        .breeds
+          each cat in cats
+            .cat-details
+              .image
+                img(src=cat.imageLink alt="login" style="width:230px; height:250px;object-fit: contain;")
+              h4.name #{cat.breed}
+              a.details(href="/breeds/"+ cat._id) learn more

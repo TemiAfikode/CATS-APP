@@ -1,0 +1,36 @@
+doctype html
+html
+    head
+      meta(charset="UTF-8")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      meta(http-equiv="X-UA-Compatible" content="ie=edge")
+      title= title
+      link(rel="stylesheet" type="text/css" href="/css/cat-detail-edit.css")
+    body
+      script(src='/js/main.js')
+      a.details(href="/breeds") back
+      .content
+        h1.page-title Add New Cat
+        form.edit(method="post", onsubmit="createCat(); return false")
+          div.form-field
+            label(for="name") Name: 
+            input.form-input(type="text", id="name", name="name")
+          div.form-field 
+            label(for="breed") Breed: 
+            input.form-input(type="text", id="breed", name="breed")
+          div.form-field 
+            label(for="description") Description: 
+            input.form-input(type="text", id="description", name="description")
+          div.form-field 
+            label(for="size") Size: 
+            input.form-input(type="text", id="size", name="size")
+          div.form-field 
+            label(for="coat") Coat: 
+            input.form-input(type="text", id="coat", name="coat")
+          div.form-field 
+            label(for="colour") Colour: 
+            input.form-input(type="text", id="colour", name="colour")
+          div.form-field 
+            label(for="imageLink") Image Link: 
+            input.form-input(type="text", id="imageLink", name="imageLink")
+          input.button(type="submit", value="Add New Cat")
