@@ -4,7 +4,7 @@ A cats information encyclopedia
 
 # SYNOPSIS (CATS APP)
 
-DOCCY is a system that manages information about different cat breeds. Cats APP has various functionalities including:
+Cats App is a system that manages information about different cat breeds. Cats APP has various functionalities including:
 
 - creating, updating and deleting cats
 
