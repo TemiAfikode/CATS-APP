@@ -11,7 +11,7 @@ DOCCY is a system that manages information about different cat breeds. Cats APP 
 # INSTALLATION
 
 1. Download and install [**Node JS**](https://nodejs.org/en/) if not already installed.
-2. Clone the [**repository here**](git@github.com:TemiAfikode/CATS-APP.git) or go to the project github page [**here**](https://github.com/TemiAfikode/CATS-APP) and download the zip file of the project. Unzip it.
+2. Clone the [**repository here**](https://github.com/TemiAfikode/CATS-APP.git) or go to the project github page [**here**](https://github.com/TemiAfikode/CATS-APP) and download the zip file of the project. Unzip it.
 3. Navigate to your terminal and change your directory to the **cats-app project directory**.
 4. Check that you are on the master branch using `git status`.
 5. Run `npm install` to install dependencies.
